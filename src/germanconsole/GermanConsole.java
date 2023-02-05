@@ -6,18 +6,22 @@ import java.util.Scanner;
 
 public class GermanConsole {
 
-	static Word[] listOfVerbs;
+	static WordOld[] listOfVerbs;
 	
 	public static void main(String[] args) {
+		
+		Verb verbs = new Verb();
+		Noun nouns = new Noun();
+		
 		Scanner console = new Scanner(System.in);
 		
 		boolean continueLesson = true;
 		int selector = 0;
 		
 		while (continueLesson) {
-			System.out.println("       Menu       \n------------------");
+			System.out.println("\n\n\n\n\n\n\n\n\n\n       Menu       \n------------------");
 			System.out.println("0. Exit");
-			System.out.println("1. Irregular Verbs");
+			System.out.println("1. Verbs");
 			System.out.println("2. Nouns");
 			String selectorInput = console.nextLine();
 						
@@ -30,8 +34,11 @@ public class GermanConsole {
 			
 			switch(selector) {
 				case 0 -> continueLesson = false;
-				case 1 -> irregularVerbsTest();
-				case 2 -> nounsTest();
+				case 1 -> verbs.runTest();
+				case 2 -> nouns.runTest();
+				
+//				case 1 -> irregularVerbsTest();
+//				case 2 -> nounsTest();
 				default -> System.out.println("Choose from 0 to 2...\n\n\n\n\n\n\n\n\n");
 			}			
 		}
@@ -65,32 +72,30 @@ public class GermanConsole {
 	
 	static void initVerbs() {
 		
-		ArrayList <Word> wordsList = new ArrayList();
+		ArrayList <WordOld> wordsList = new ArrayList();
 		
-		wordsList.add(new Word("есть", "essen", "aß", "gegessen"));
-		wordsList.add(new Word("пить", "trinken", "trank", "getrunken"));
-		wordsList.add(new Word("идти", "gehen", "ging", "gegangen"));
-		wordsList.add(new Word("бежать", "laufen", "lief", "gelaufen"));
-		wordsList.add(new Word("ехать", "fahren", "fuhr", "gefahren"));
-		wordsList.add(new Word("давать", "geben", "gab", "gegeben"));
-		wordsList.add(new Word("приходить", "kommen", "kam", "gekommen"));
-		wordsList.add(new Word("просить", "bitten", "bat", "gebeten"));
-		wordsList.add(new Word("оставаться", "bleiben", "blieb", "geblieben"));
-		wordsList.add(new Word("падать", "fallen", "fiel", "gefallen"));
-		wordsList.add(new Word("помогать", "helfen", "half", "geholfen"));
-		wordsList.add(new Word("читать", "lesen", "las", "gelesen"));
-		wordsList.add(new Word("лететь", "fliegen", "flog", "geflogen"));
-		wordsList.add(new Word("брать", "nehmen", "nahm", "genommen"));
-		wordsList.add(new Word("писать", "schreiben", "schrieb", "geschrieben"));
-		wordsList.add(new Word("находить", "finden", "fand", "gefunden"));
-		wordsList.add(new Word("петь", "singen", "sang", "gesungen"));
-		wordsList.add(new Word("закрывать", "schließen", "schloss", "geschlossen"));
-		wordsList.add(new Word("висеть", "hängen", "hing", "gehangen"));
-		wordsList.add(new Word("ловить", "fangen", "fing", "gefangen"));
-
+		wordsList.add(new WordOld("есть", "essen", "aß", "gegessen"));
+		wordsList.add(new WordOld("пить", "trinken", "trank", "getrunken"));
+		wordsList.add(new WordOld("идти", "gehen", "ging", "gegangen"));
+		wordsList.add(new WordOld("бежать", "laufen", "lief", "gelaufen"));
+		wordsList.add(new WordOld("ехать", "fahren", "fuhr", "gefahren"));
+		wordsList.add(new WordOld("давать", "geben", "gab", "gegeben"));
+		wordsList.add(new WordOld("приходить", "kommen", "kam", "gekommen"));
+		wordsList.add(new WordOld("просить", "bitten", "bat", "gebeten"));
+		wordsList.add(new WordOld("оставаться", "bleiben", "blieb", "geblieben"));
+		wordsList.add(new WordOld("падать", "fallen", "fiel", "gefallen"));
+		wordsList.add(new WordOld("помогать", "helfen", "half", "geholfen"));
+		wordsList.add(new WordOld("читать", "lesen", "las", "gelesen"));
+		wordsList.add(new WordOld("лететь", "fliegen", "flog", "geflogen"));
+		wordsList.add(new WordOld("брать", "nehmen", "nahm", "genommen"));
+		wordsList.add(new WordOld("писать", "schreiben", "schrieb", "geschrieben"));
+		wordsList.add(new WordOld("находить", "finden", "fand", "gefunden"));
+		wordsList.add(new WordOld("петь", "singen", "sang", "gesungen"));
+		wordsList.add(new WordOld("закрывать", "schließen", "schloss", "geschlossen"));
+		wordsList.add(new WordOld("висеть", "hängen", "hing", "gehangen"));
+		wordsList.add(new WordOld("ловить", "fangen", "fing", "gefangen"));
 		
-		listOfVerbs = wordsList.toArray(new Word[0]);
-		
+		listOfVerbs = wordsList.toArray(new WordOld[0]);
 		
 //		listOfVerbs[0] = new Word("есть", "essen", "aß", "gegessen");
 	}
