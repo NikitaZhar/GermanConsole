@@ -11,7 +11,7 @@ public class GermanConsole {
 	public static void main(String[] args) {
 		
 		Verbs verbs = new Verbs();
-		Noun nouns = new Noun();
+		Nouns nouns = new Nouns();
 				
 		boolean continueLesson = true;
 
@@ -19,7 +19,7 @@ public class GermanConsole {
 			switch(mainMenuInput()) {
 			case 0 -> continueLesson = false;
 			case 1 -> verbs.runTestOfVerbs();
-			case 2 -> nouns.runTest();
+			case 2 -> nouns.runTestOfNouns();
 			default -> System.out.println("Choose from 0 to 2...\n\n\n\n\n\n\n\n\n");
 			}			
 		}
