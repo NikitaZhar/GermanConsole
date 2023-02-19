@@ -20,7 +20,7 @@ public class GermanConsole {
 			case 0 -> continueLesson = false;
 			case 1 -> verbs.runTestOfVerbs();
 			case 2 -> nouns.runTestOfNouns();
-			default -> System.out.println("Choose from 0 to 2...\n\n\n\n\n\n\n\n\n");
+			default -> System.out.println("Choose from 0 to 9...\n\n\n\n\n\n\n");
 			}			
 		}
 	}
@@ -38,6 +38,10 @@ public class GermanConsole {
 					0. Exit
 					1. Verbs learning
 					2. Nouns learning
+					3. Add new Verb
+					4. Add new Noun
+					
+					9. Options
 
 					Enter a number : """;
 			System.out.printf(textBlock + "  ");

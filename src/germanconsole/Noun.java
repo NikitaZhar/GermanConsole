@@ -88,7 +88,7 @@ class Nouns {
 
 		while (selector) {
 
-			System.out.printf("%n%15s : %10s %s, die %s (%d) : ", 
+			System.out.printf("%n%15s : %10s %s - die %s (%d) : ", 
 					nounsForTest[indexArray[indexCount]].getRussianWord(), 
 					nounsForTest[indexArray[indexCount]].getArticle(),
 					nounsForTest[indexArray[indexCount]].getGermanWord(),
@@ -121,21 +121,49 @@ class Nouns {
 		wordsList.add(new Noun("нож", "das", "Messer", "Messer", 0));
 		wordsList.add(new Noun("столовый прибор", "das", "Besteck", "Bestecke", 0));
 		wordsList.add(new Noun("кастрюля", "der", "Kochtopf", "Kochtöpfe", 0));
+		wordsList.add(new Noun("бутылка", "die", "Flasche", "Flaschen", 0));
+		wordsList.add(new Noun("сковорода", "die", "Pfanne", "Pfannen", 0));
+		wordsList.add(new Noun("плита", "der", "Herd", "Herde", 0));
+		wordsList.add(new Noun("кухня", "die", "Küche", "Küchen", 0));
+		wordsList.add(new Noun("яйцо", "das", "Ei", "Eier", 0));
+		wordsList.add(new Noun("холодильник", "der", "Kühlschrank", "Kühlschränke", 0));
+		wordsList.add(new Noun("хлеб", "das", "Brot", "Brote", 0));
+		wordsList.add(new Noun("штаны", "die", "Hose", "Hosen", 0));
+		wordsList.add(new Noun("рубашка", "das", "Hemd", "Hemden", 0));
+		wordsList.add(new Noun("носок", "die", "Socke", "Socken", 0));
+		wordsList.add(new Noun("жакет", "die", "Jacke", "Jacken", 0));
+		wordsList.add(new Noun("свитер", "der", "Pullover", "Pullover", 0));
+		wordsList.add(new Noun("обувь", "der", "Schuh", "Schuhe", 0));
+		wordsList.add(new Noun("шляпа", "der", "Hut", "Hüte", 0));
+		wordsList.add(new Noun("футболка", "das", "T-Shirt", "T-Shirts", 0));
+		wordsList.add(new Noun("платье", "das", "Kleid", "Kleider", 0));
+		wordsList.add(new Noun("блузка", "die", "Bluse", "Blusen", 0));
+		wordsList.add(new Noun("юбка", "der", "Rock", "Röcke", 0));
+		wordsList.add(new Noun("плавки", "die", "Badehose", "Badehosen", 0));
+		wordsList.add(new Noun("купальник", "der", "Badeanzug", "Badeanzüge", 0));
+		wordsList.add(new Noun("нижнее бельё ", "die", "Unterwäsche", "Unterwäschen", 0));
+		wordsList.add(new Noun("майка", "das", "Unterhemd", "Unterhemden", 0));
+		wordsList.add(new Noun("зонт", "der", "Regenschirm", "Regenschirme", 0));
+		wordsList.add(new Noun("лужа", "die", "Pfütze", "Pfützen", 0));
+		wordsList.add(new Noun("облако", "die", "Wolke", "Wolken", 0));
+		wordsList.add(new Noun("штора", "der", "Vorhang", "Vorhänge", 0));
+		wordsList.add(new Noun("помидор", "die", "Tomate", "Tomaten", 0));
+		wordsList.add(new Noun("лимон", "die", "Zitrone", "Zitronen", 0));
+		wordsList.add(new Noun("мука", "das", "Mehl", "...", 0));
+		wordsList.add(new Noun("сахар", "der", "Zucker", "...", 0));
+		wordsList.add(new Noun("молоко", "die", "Milch", "...", 0));
+		wordsList.add(new Noun("масло", "die", "Butter", "...", 0));
+		wordsList.add(new Noun("банан", "die", "Banane", "Bananen", 0));
+		wordsList.add(new Noun("сыр", "der", "Käse", "...", 0));
+		wordsList.add(new Noun("душ", "die", "Dusche", "Duschen", 0));
+		wordsList.add(new Noun("диван", "das", "Sofa", "Sofas", 0));
+		wordsList.add(new Noun("полотенце", "das", "Handtuch", "Handtücher", 0));
+		wordsList.add(new Noun("лук", "die", "Zwiebel", "Zwiebeln", 0));
+		wordsList.add(new Noun("пирог", "der", "Kuchen", "Kuchen", 0));
+		wordsList.add(new Noun("водопроводный кран ", "der", "Wasserhahn", "Wasserhähne", 0));
+		wordsList.add(new Noun("часы", "die", "Uhr", "Uhren", 0));
+		wordsList.add(new Noun("корзина", "der", "Korb", "Körbe", 0));
 
-		
-		// die Flasche
-		// die Pfanne
-		// der Herd
-		// die Küche
-		// das Ei
-		// die Zwiebel
-		// der Jogurt
-		// der Kühlschrank, ä -e
-		// das Brot, -e
-
-		
-		
-		
 
 		return wordsList.toArray(new Noun[0]);
 	}
